@@ -237,15 +237,22 @@
       <div id="space225"></div>
     </div> -->
     <p id="hello">ello</p>
+    <div style="text-align: center">
+      <input type="text" placeholder="Enter Text" />
+    </div>
+
     <script>
-      document.onkeypress = function (eventKeyName) {
-        eventKeyName = eventKeyName || window.event;
-        if (eventKeyName.keyCode == 37) {
-          alert("You have pressed enter key");
-        } else {
-          //   alert(String.fromCharCode(eventKeyName.keyCode));
+      document.addEventListener("keyup", (e) => {
+        if (e.keyCode === 40) {
+          console.log(e.target.value);
+        } else if (e.keyCode === 39) {
+          console.log(e.target.value);
+        } else if (e.keyCode === 38) {
+          console.log(e.target.value);
+        } else if (e.keyCode === 37) {
+          console.log(e.target.value);
         }
-      };
+      });
     </script>
   </body>
 </html>
