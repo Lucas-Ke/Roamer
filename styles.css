@@ -1,0 +1,19 @@
+*{
+    margin: 0%;
+}
+
+#box {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    height: 100%;
+}
+#box>div{
+    border: red solid 1px;
+    box-sizing: border-box;
+    height: 6.67vh;  
+    width: 6.67vw;
+}
+.player{
+    background-color: aqua;
+}
