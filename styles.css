@@ -4,15 +4,15 @@
 
 #box {
     display: grid;
-    grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: repeat(15, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(21, 1fr);
     height: 100%;
 }
 #box>div{
     border: red solid 1px;
     box-sizing: border-box;
-    height: 6.67vh;  
-    width: 6.67vw;
+    height: 4.76190476vh;  
+    width: 4.76190476vw;
 }
 .player{
     background-color: aqua;
