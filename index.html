@@ -458,34 +458,40 @@
       document.addEventListener("keyup", (e) => {
         if (e.keyCode === 40) {
           console.log("down");
-          movement += 15;
-          if (movement > 225) {
-            movement -= 15;
+          movement += 21;
+          if (movement > 441) {
+            movement -= 21;
           } else {
           }
           var tomove = "space" + movement;
           document.getElementById(tomove).classList.add("player");
-          var downmovement = movement - 15;
+          var downmovement = movement - 21;
           var todownmove = "space" + downmovement;
           document.getElementById(todownmove).classList.remove("player");
         } else if (e.keyCode === 39) {
           console.log("right");
           if (
-            movement == 15 ||
-            movement == 30 ||
-            movement == 45 ||
-            movement == 60 ||
-            movement == 75 ||
-            movement == 90 ||
+            movement == 21  ||
+            movement == 42  ||
+            movement == 63  ||
+            movement == 84  ||
             movement == 105 ||
-            movement == 120 ||
-            movement == 135 ||
-            movement == 150 ||
-            movement == 165 ||
-            movement == 180 ||
-            movement == 195 ||
+            movement == 126 ||
+            movement == 147 ||
+            movement == 168 ||
+            movement == 189 ||
             movement == 210 ||
-            movement == 225
+            movement == 231 ||
+            movement == 252 ||
+            movement == 273 ||
+            movement == 294 ||
+            movement == 315 ||
+            movement == 336 ||
+            movement == 357 ||
+            movement == 378 ||
+            movement == 399 ||
+            movement == 420 ||
+            movement == 441
           ) {
             movement -= 1;
           } else {
@@ -498,34 +504,40 @@
           document.getElementById(torightmove).classList.remove("player");
         } else if (e.keyCode === 38) {
           console.log("up");
-          movement -= 15;
+          movement -= 21;
           if (movement < 1) {
-            movement += 15;
+            movement += 21;
           } else {
           }
           var tomove = "space" + movement;
           document.getElementById(tomove).classList.add("player");
-          var upmovement = movement + 15;
+          var upmovement = movement + 21;
           var toupmove = "space" + upmovement;
           document.getElementById(toupmove).classList.remove("player");
         } else if (e.keyCode === 37) {
           console.log("left");
           if (
-            movement == 1 ||
-            movement == 16 ||
-            movement == 31 ||
-            movement == 46 ||
-            movement == 61 ||
-            movement == 76 ||
-            movement == 91 ||
+            movement == 1   ||
+            movement == 22  ||
+            movement == 43  ||
+            movement == 64  ||
+            movement == 85  ||
             movement == 106 ||
-            movement == 121 ||
-            movement == 136 ||
-            movement == 151 ||
-            movement == 166 ||
-            movement == 181 ||
-            movement == 196 ||
-            movement == 211
+            movement == 127 ||
+            movement == 148 ||
+            movement == 169 ||
+            movement == 190 ||
+            movement == 211 ||
+            movement == 232 ||
+            movement == 253 ||
+            movement == 274 ||
+            movement == 295 ||
+            movement == 316 ||
+            movement == 337 ||
+            movement == 358 ||
+            movement == 379 ||
+            movement == 400 ||
+            movement == 421
           ) {
             movement += 1;
           } else {
